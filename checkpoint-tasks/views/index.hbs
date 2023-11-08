@@ -1,0 +1,22 @@
+<html lang="en">
+{{> head }}
+<body>
+  {{> nav }}
+
+  <div class="blogs content">
+    <h2>All Blogs</h2>
+    {{#if availableBlogs}}        
+      <ul>
+        {{#each blogs}}
+          <h3 class="title">{{ this.title }}</h3>
+          <p class="snippet">{{ this.snippet }}</p>
+        {{/each}}
+      </ul>
+    {{else}}
+      <p>There are no blog posts to display...</p>
+    {{/if}}
+  </div>
+
+  {{> footer }}
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html lang="en">
+  {{> head }}
+<body>  
+  {{> nav }}
+
+  <div class="services-devs content">
+    <h1>Services - Development</h1><br/>
+      {{#if availableDevs}}
+        <div>
+          <h2>Method (1)</h2>
+          <div class="section-devItems">
+            {{#each devs as |devItem|}}
+              <h3>{{devItem.title}}</h3>
+              <img class="item-img" src="{{devItem.src}}" alt="{{devItem.alt}}"/>
+            {{/each}}
+          </div>
+        </div>
+      {{else}}
+        <p>There are no dev tools to display...</p>
+      {{/if}}
+  </div>
+
+  {{> footer }}
+</body>
+</html>

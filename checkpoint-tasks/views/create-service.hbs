@@ -1,0 +1,23 @@
+<html lang="en">
+  {{> head }}
+<body>
+  {{> nav }}
+
+  <div class="create-service content">
+    <h2 align="center">Create Service</h2>
+    <form>
+      <label for="title">Title: <span class="red-dot-required">*</span></label>
+      <input type="text" id="title" name="title" required>
+      <label for="alt">Alternate (image alt): <span class="red-dot-required">*</span></label>
+      <input type="text" id="alt" name="alt" required>
+      <label for="path">Source (image src): <span class="red-dot-required">*</span></label>
+      <input type="text" id="path" name="path" required>
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" required></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+
+  {{> footer }}
+</body>
+</html>
