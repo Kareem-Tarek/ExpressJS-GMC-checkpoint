@@ -1,4 +1,4 @@
-# Some important notes that you need to read before testing any of the tasks (ejs files)!
+# Some important notes that you need to read before testing any of the tasks (hbs files)!
 
 ### Run the express app (app.js) from the "checkpoint-tasks" directory
     * How to run the express project?
